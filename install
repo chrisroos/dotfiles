@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+Dir[File.join(File.dirname(__FILE__), '*')].each do |dotfile|
+  next if dotfile == __FILE__
+  cmd = "ln -sf #{File.expand_path(dotfile)} ~/.#{File.basename(dotfile)}"
+  `#{cmd}`
+end
