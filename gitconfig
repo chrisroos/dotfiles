@@ -1,0 +1,8 @@
+[user]
+  name = Chris Roos
+  email = chris@seagul.co.uk
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
