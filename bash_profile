@@ -14,4 +14,9 @@ export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.3-57419/jars"
 export EC2_URL="https://eu-west-1.ec2.amazonaws.com/"
 
+# Variables for https://github.com/defunkt/gist
+# *NOTE* This requires me to set github.token in the keychain
+export GITHUB_USER=chrisroos
+export GITHUB_TOKEN=`security 2>&1 >/dev/null find-generic-password -gs github.token | ruby -e 'print $1 if STDIN.gets =~ /^password: "(.*)"$/'`
+
 if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rvm/scripts/rvm ; fi
