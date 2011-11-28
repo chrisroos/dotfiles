@@ -1,3 +1,4 @@
+export PATH=~/.rbenv/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
@@ -20,3 +21,5 @@ export GITHUB_USER=chrisroos
 export GITHUB_TOKEN=`security 2>&1 >/dev/null find-generic-password -gs github.token | ruby -e 'print $1 if STDIN.gets =~ /^password: "(.*)"$/'`
 
 if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rvm/scripts/rvm ; fi
+
+eval "$(rbenv init -)"
