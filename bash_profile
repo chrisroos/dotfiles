@@ -20,6 +20,8 @@ export EC2_URL="https://eu-west-1.ec2.amazonaws.com/"
 export GITHUB_USER=chrisroos
 export GITHUB_TOKEN=`security 2>&1 >/dev/null find-generic-password -gs github.token | ruby -e 'print $1 if STDIN.gets =~ /^password: "(.*)"$/'`
 
+export CUCUMBER_FORMAT="progress"
+
 if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rvm/scripts/rvm ; fi
 
 eval "$(rbenv init -)"
