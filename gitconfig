@@ -10,3 +10,5 @@
   st = status
   co = checkout
   br = branch
+[core]
+	excludesfile = /Users/chrisroos/.gitignore
