@@ -1,8 +1,8 @@
-export PATH=~/.rbenv/bin:$PATH
-export PATH=~/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=~/bin:$PATH
+export PATH=~/.rbenv/bin:$PATH
 
 export EDITOR="mate -w"
 export RUBYOPT='rubygems'
@@ -25,3 +25,5 @@ export CUCUMBER_FORMAT="progress"
 if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rvm/scripts/rvm ; fi
 
 eval "$(rbenv init -)"
+
+export PATH=./.bundle/bin:$PATH
