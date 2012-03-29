@@ -28,4 +28,4 @@ eval "$(rbenv init -)"
 
 export PATH=./.bundle/bin:$PATH
 
-export PS1='\[\e[1;32m\][\W]\$\[\e[0m\] '
+export PS1='\[\e[1;32m\][\w]\$\[\e[0m\] '
