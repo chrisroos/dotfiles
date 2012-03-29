@@ -27,3 +27,5 @@ if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rv
 eval "$(rbenv init -)"
 
 export PATH=./.bundle/bin:$PATH
+
+export PS1='\[\e[1;32m\][\W]\$\[\e[0m\] '
