@@ -5,7 +5,6 @@ export PATH=~/bin:$PATH
 export PATH=~/.rbenv/bin:$PATH
 
 export EDITOR="mate -w"
-export RUBYOPT='rubygems'
 
 alias download-harbour-images="rsync -avz seagul.co.uk:/home/chrisroos/ramsgate-harbour-webcam-images/ ~/Pictures/Photos/Ramsgate\ harbour\ webcam/"
 
