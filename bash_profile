@@ -6,8 +6,6 @@ export PATH=~/.rbenv/bin:$PATH
 
 export EDITOR="mate -w"
 
-alias download-harbour-images="rsync -avz seagul.co.uk:/home/chrisroos/ramsgate-harbour-webcam-images/ ~/Pictures/Photos/Ramsgate\ harbour\ webcam/"
-
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
