@@ -16,6 +16,8 @@ export PS1='\[\e[1;30m\]\h:\[\e[1;34m\]\w\$\[\e[0m\] '
 
 export LANG=en_GB.UTF-8
 
+alias gem-uninstall-all="gem list --no-versions | xargs gem uninstall -a --ignore-dependencies"
+
 case `uname -a` in
   Darwin*)
     source ~/.bash.mac
