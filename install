@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 for found in `pwd`/dotfiles/*; do
+  rm -f ~/.`basename $found`
   ln -fs $found ~/.`basename $found`
 done
 
