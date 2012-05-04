@@ -1,3 +1,14 @@
+filetype off                 " Required by Vundle as far as I can tell.
+
+" Vundle set-up
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'hallison/vim-markdown'
+
+filetype plugin indent on    " Required by Vundle, apparently
+
 syntax on                    " Purdy syntax highlighting
 set list                     " Show hidden characters (tabs, for example)
 set listchars=tab:>-,trail:- " Highlight tabs with '>-' and trailing spaces with '-'
