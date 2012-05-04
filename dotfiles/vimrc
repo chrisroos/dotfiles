@@ -1,0 +1,8 @@
+syntax on                    " Purdy syntax highlighting
+set list                     " Show hidden characters (tabs, for example)
+set listchars=tab:>-,trail:- " Highlight tabs with '>-' and trailing spaces with '-'
+set number                   " Line number goodness
+set ruler                    " Show row and column on the bottom right of the screen
+set showmatch                " Show matching brackets
+set expandtab                " Soft tabs (spaces instead of tabs)
+set softtabstop=2            " Number of spaces in a soft tab
