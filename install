@@ -1,6 +1,5 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env bash
 
-Dir[File.expand_path('../dotfiles/*', __FILE__)].each do |dotfile|
-  cmd = "ln -sf #{File.expand_path(dotfile)} ~/.#{File.basename(dotfile)}"
-  `#{cmd}`
-end
+for found in `pwd`/dotfiles/*; do
+  ln -fs $found ~/.`basename $found`
+done
