@@ -12,7 +12,7 @@ eval "$(rbenv init -)"
 
 export PATH=./.bundle/bin:$PATH
 
-export PS1='\[\e[1;30m\]\u@\h:\[\e[1;34m\]\w\$\[\e[0m\] '
+export PS1='\[\e[1;30m\]\h:\[\e[1;34m\]\w\$\[\e[0m\] '
 
 export LANG=en_GB.UTF-8
 
