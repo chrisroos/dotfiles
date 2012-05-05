@@ -8,7 +8,11 @@ export CUCUMBER_FORMAT="progress"
 
 if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rvm/scripts/rvm ; fi
 
-eval "$(rbenv init -)"
+# Ensure rbenv exists before initializing it
+command -v rbenv > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+  eval "$(rbenv init -)"
+fi
 
 export PATH=./.bundle/bin:$PATH
 
