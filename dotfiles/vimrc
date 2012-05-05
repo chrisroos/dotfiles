@@ -7,6 +7,8 @@ Bundle 'gmarik/vundle'
 
 Bundle 'hallison/vim-markdown'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on    " Required by Vundle, apparently
 
