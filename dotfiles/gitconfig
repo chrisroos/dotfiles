@@ -11,4 +11,4 @@
   co = checkout
   br = branch
 [core]
-	excludesfile = /Users/chrisroos/.gitignore
+  excludesfile = ~/.gitignore

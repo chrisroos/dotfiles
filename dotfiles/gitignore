@@ -1,3 +1,4 @@
 .powrc
 .rbenv-version
 .DS_Store
+*.swp
