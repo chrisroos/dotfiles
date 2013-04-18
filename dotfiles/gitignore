@@ -3,3 +3,4 @@
 .rbenv-version
 .DS_Store
 *.swp
+.ruby-version
