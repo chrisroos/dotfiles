@@ -10,5 +10,6 @@
   st = status
   co = checkout
   br = branch
+  l = "log --oneline --graph --decorate --all"
 [core]
   excludesfile = ~/.gitignore
