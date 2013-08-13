@@ -4,7 +4,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/.rbenv/bin:$PATH
 
-export CUCUMBER_FORMAT="progress"
+# export CUCUMBER_FORMAT="progress"
 
 if [[ -s /Users/chrisroos/.rvm/scripts/rvm ]] ; then source /Users/chrisroos/.rvm/scripts/rvm ; fi
 
