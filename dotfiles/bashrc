@@ -36,5 +36,9 @@ case `uname -a` in
     ;;
 esac
 
+if [ -f ~/.bash_local ]; then
+   source ~/.bash_local
+fi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
