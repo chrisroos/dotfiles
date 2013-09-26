@@ -36,6 +36,12 @@ case `uname -a` in
     ;;
 esac
 
+# Grab the git-completion script with:
+#   curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
 if [ -f ~/.bash_local ]; then
    source ~/.bash_local
 fi
