@@ -13,3 +13,5 @@
   l = "log --oneline --graph --decorate --all"
 [core]
   excludesfile = ~/.gitignore
+[push]
+  default = simple
