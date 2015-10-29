@@ -1,16 +1,21 @@
-filetype off                 " Required by Vundle as far as I can tell.
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Vundle set-up
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'hallison/vim-markdown'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'kien/ctrlp.vim'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-filetype plugin indent on    " Required by Vundle, apparently
+Plugin 'hallison/vim-markdown'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'kien/ctrlp.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 syntax on                    " Purdy syntax highlighting
 set list                     " Show hidden characters (tabs, for example)
