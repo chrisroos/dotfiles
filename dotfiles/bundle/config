@@ -2,3 +2,4 @@
 BUNDLE_BIN: "./.bundle/bin"
 BUNDLE_PATH: "./.bundle/gems"
 BUNDLE_BUILD__SQLITE3: "--with-sqlite3-dir=/usr/local/"
+BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-I/usr/local/opt/openssl/include"
