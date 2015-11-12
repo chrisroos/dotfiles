@@ -13,6 +13,7 @@
   l = "log --oneline --graph --decorate --all"
 [core]
   excludesfile = ~/.gitignore
+  editor = vim
 [push]
   default = simple
 [filter "lfs"]
