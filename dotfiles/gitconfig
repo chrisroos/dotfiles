@@ -22,3 +22,5 @@
 	required = true
 [rebase]
 	autosquash = true
+[credential]
+	helper = osxkeychain
