@@ -65,3 +65,8 @@ export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS # For Ruby 2.1
 
 # Autocomplete for AWS CLI
 complete -C aws_completer aws
+
+# TensorFlow
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
