@@ -50,9 +50,6 @@ if [ -f ~/.aliases ]; then
    source ~/.aliases
 fi
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Magic Ruby settings to make tests run faster. Courtesy of Chris Zetter.
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
