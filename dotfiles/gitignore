@@ -7,3 +7,7 @@
 
 # Simplecov project level config file
 .simplecov
+
+# Directory-specific environment files for `direnv`
+.envrc
+
