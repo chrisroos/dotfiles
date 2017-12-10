@@ -1,4 +1,5 @@
 alias gem-uninstall-all="gem list --no-versions | xargs gem uninstall -a --ignore-dependencies"
+alias timestamp-iso-8601='date -u "+%Y%m%dT%H%M%SZ"'
 alias today='date "+%Y-%m-%d"'
 alias last-monday='date -v"-Monday" -v"-7d" +%Y-%m-%d'
 alias this-monday='date -v"-Monday" +%Y-%m-%d'
