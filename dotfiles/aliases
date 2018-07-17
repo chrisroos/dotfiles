@@ -13,3 +13,10 @@ alias create-960-640-image='convert -size 960x640 canvas:white ~/Downloads/white
 # Trainline
 alias trainline-vpn='sudo openconnect -v --authgroup Default -u chrisr --servercert sha256:321932dffb1070e5f6b419e0c13d8817161877d59ee696bad2351c560acf8ff0 https://vpn.thetrainline.com'
 
+# random-word
+# Uses `jot` to pick a random number (A) between 0 and the number of words in /usr/share/dict/words
+# Uses `head` to read the first A lines
+# Uses `tail` to read the last line
+# Uses `tr` to ensure the output is lower case
+alias random-word='head -n$(jot -r 1 0 $(wc -l < /usr/share/dict/words)) /usr/share/dict/words | tail -n 1 | tr "[:upper:]" "[:lower:]"'
+
