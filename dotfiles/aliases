@@ -9,3 +9,7 @@ alias gds-vpn='sudo openconnect -v --pfs --no-dtls -u $USER https://vpn.digital.
 alias gds-vpn-dr='sudo openconnect -v --pfs --no-dtls -u $USER https://vpndr.digital.cabinet-office.gov.uk/ah'
 alias epoch-time='date +%s'
 alias create-960-640-image='convert -size 960x640 canvas:white ~/Downloads/white-960x640.gif'
+
+# Trainline
+alias trainline-vpn='sudo openconnect -v --authgroup Default -u chrisr --servercert sha256:321932dffb1070e5f6b419e0c13d8817161877d59ee696bad2351c560acf8ff0 https://vpn.thetrainline.com'
+
