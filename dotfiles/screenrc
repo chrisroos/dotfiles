@@ -1,6 +1,5 @@
-# Always display window title at the bottom of the screen
-caption always
+# Display window 'tabs' at the bottom of the screen
+hardstatus alwayslastline "%w"
 
 # Hide the default welcome message
 startup_message off
-
