@@ -25,3 +25,5 @@ set ruler                    " Show row and column on the bottom right of the sc
 set showmatch                " Show matching brackets
 set expandtab                " Soft tabs (spaces instead of tabs)
 set softtabstop=2            " Number of spaces in a soft tab
+set backspace=indent,eol,start " Make backspace work as I expect
+
