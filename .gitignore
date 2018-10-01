@@ -1,1 +1,4 @@
 dotfiles/bash_local
+
+# Bundler's cache dir
+dotfiles/bundle/cache/
