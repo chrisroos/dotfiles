@@ -26,3 +26,5 @@ set expandtab                " Soft tabs (spaces instead of tabs)
 set softtabstop=2            " Number of spaces in a soft tab
 set backspace=indent,eol,start " Make backspace work as I expect
 
+set laststatus=2               " Always display status line
+
