@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'lambdatoast/elm.vim' " Elm syntax highlighting
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
