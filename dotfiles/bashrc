@@ -70,7 +70,10 @@ export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 export PATH="$CUDA_HOME/bin:$PATH"
 
 # Direnv
-eval "$(direnv hook bash)"
+command -v direnv > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+  eval "$(direnv hook bash)"
+fi
 
 # Autocomplete for homebrew
 # Copied from https://docs.brew.sh/Shell-Completion
