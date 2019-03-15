@@ -29,3 +29,5 @@ set backspace=indent,eol,start " Make backspace work as I expect
 
 set laststatus=2               " Always display status line
 
+autocmd BufWritePre * %s/\s\+$//e  " Strip trailing whitespace on save
+
