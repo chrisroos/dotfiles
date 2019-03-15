@@ -5,5 +5,3 @@ for found in `pwd`/dotfiles/*; do
   ln -fs $found ~/.`basename $found`
 done
 
-mkdir -p ~/.ssh
-ln -fs `pwd`/ssh/authorized_keys ~/.ssh/authorized_keys
