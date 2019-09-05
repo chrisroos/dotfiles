@@ -3,7 +3,6 @@
 .rbenv-version
 .DS_Store
 *.swp
-.ruby-version
 
 # Simplecov project level config file
 .simplecov
