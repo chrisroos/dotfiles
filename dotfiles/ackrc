@@ -1,2 +1,8 @@
 --type-add=ruby=.haml,.rake,.ru
 --type-add=shell=.pp,.feature,.scss,.snip,.markdown
+
+# Ignore .log files
+--ignore-file=ext:log
+
+# Ignore ctags file
+--ignore-file=is:tags
