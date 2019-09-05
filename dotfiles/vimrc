@@ -12,6 +12,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'lambdatoast/elm.vim' " Elm syntax highlighting
+Plugin 'mileszs/ack.vim'     " Use `ack` from within vim
+Plugin 'Konfekt/FastFold'    " Attempt to make Vim more responsive when foldmethod=syntax
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -25,9 +27,29 @@ set ruler                    " Show row and column on the bottom right of the sc
 set showmatch                " Show matching brackets
 set expandtab                " Soft tabs (spaces instead of tabs)
 set softtabstop=2            " Number of spaces in a soft tab
+set tabstop=2                  " Indent 2 spaces
+set shiftwidth=2               " Indent 2 spaces
 set backspace=indent,eol,start " Make backspace work as I expect
 
 set laststatus=2               " Always display status line
 
 autocmd BufWritePre * %s/\s\+$//e  " Strip trailing whitespace on save
 
+" Run rspec using \ r
+nnoremap <silent> <leader>r :term bundle exec rspec %<cr>
+
+set background=dark
+
+" Sensible code folding for Ruby
+" I might want to restrict this setting to Ruby if I find that it doesn't work
+" so well for other formats
+" TODO: This folds by default - how to I get it to remain open by default?
+set foldmethod=syntax
+
+" Use ag instead of ack
+" From https://github.com/ggreer/the_silver_searcher#vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Custom command to run RSpec example on current line
+command -range RSpecRunLine :term rspec %:<line1>
+nnoremap <silent> <leader>rl :RSpecRunLine<cr>
