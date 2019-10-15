@@ -53,3 +53,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " Custom command to run RSpec example on current line
 command -range RSpecRunLine :term rspec %:<line1>
 nnoremap <silent> <leader>rl :RSpecRunLine<cr>
+
+" Custom command to run Rails test on current line
+command -range RailsTestRunLine :term rails test %:<line1>
+nnoremap <silent> <leader>rtl :RailsTestRunLine<cr>
