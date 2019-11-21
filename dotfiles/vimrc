@@ -42,10 +42,6 @@ nnoremap <silent> <leader>r :term bundle exec rspec %<cr>
 
 set background=dark
 
-" Sensible code folding for Ruby
-" TODO: This folds by default - how to I get it to remain open by default?
-autocmd FileType ruby setlocal foldmethod=syntax
-
 " Use ag instead of ack
 " From https://github.com/ggreer/the_silver_searcher#vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
