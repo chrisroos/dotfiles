@@ -91,3 +91,11 @@ fi
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+if [ -f $HOME/.asdf/asdf.sh ]; then
+  . $HOME/.asdf/asdf.sh
+fi
+
+if [ -f $HOME/.asdf/completions/asdf.bash ]; then
+  . $HOME/.asdf/completions/asdf.bash
+fi
