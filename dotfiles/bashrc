@@ -69,12 +69,6 @@ export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 export PATH="$CUDA_HOME/bin:$PATH"
 
-# Direnv
-command -v direnv > /dev/null 2>&1
-if [ $? -eq 0 ]; then
-  eval "$(direnv hook bash)"
-fi
-
 # Autocomplete for homebrew
 # Copied from https://docs.brew.sh/Shell-Completion
 if type brew &>/dev/null; then
@@ -98,4 +92,12 @@ fi
 
 if [ -f $HOME/.asdf/completions/asdf.bash ]; then
   . $HOME/.asdf/completions/asdf.bash
+fi
+
+source /usr/local/share/chruby/chruby.sh
+
+# Direnv
+command -v direnv > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+  eval "$(direnv hook bash)"
 fi
