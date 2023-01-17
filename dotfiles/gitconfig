@@ -25,5 +25,5 @@
 	required = true
 [rebase]
 	autosquash = true
-[credential]
-	helper = osxkeychain
+[init]
+	defaultBranch = main
