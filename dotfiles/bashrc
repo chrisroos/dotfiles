@@ -4,8 +4,6 @@ export PATH=/usr/local/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/.rbenv/bin:$PATH
 
-# export CUCUMBER_FORMAT="progress"
-
 # Ensure rbenv exists before initializing it
 command -v rbenv > /dev/null 2>&1
 if [ $? -eq 0 ]; then
