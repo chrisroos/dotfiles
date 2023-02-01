@@ -25,18 +25,6 @@ export EDITOR="vim"
 # Required by bash-completion brew package
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-case `uname -a` in
-  Darwin*)
-    source ~/.bash.mac
-    ;;
-  FreeBSD*)
-    # FreeBSD specific shenanigans
-    ;;
-  *)
-    # Linux/Other specific shenanigans
-    ;;
-esac
-
 # Grab the git-completion script with:
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 if [ -f ~/.git-completion.bash ]; then
