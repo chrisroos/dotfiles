@@ -73,7 +73,10 @@ if [ -f $HOME/.asdf/completions/asdf.bash ]; then
   . $HOME/.asdf/completions/asdf.bash
 fi
 
-source /usr/local/share/chruby/chruby.sh
+# chruby - https://github.com/postmodern/chruby
+if [ -f /usr/local/share/chruby/chruby.sh ]; then
+  source /usr/local/share/chruby/chruby.sh
+fi
 
 # Direnv
 command -v direnv > /dev/null 2>&1
