@@ -65,10 +65,10 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# asdf - https://asdf-vm.com/
 if [ -f $HOME/.asdf/asdf.sh ]; then
   . $HOME/.asdf/asdf.sh
 fi
-
 if [ -f $HOME/.asdf/completions/asdf.bash ]; then
   . $HOME/.asdf/completions/asdf.bash
 fi
