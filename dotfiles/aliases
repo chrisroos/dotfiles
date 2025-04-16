@@ -20,3 +20,7 @@ alias gfr-proxy='ssh -D 8080 -N gofreerange.com'
 # Uses `tail` to read the last line
 # Uses `tr` to ensure the output is lower case
 alias random-word='head -n$(jot -r 1 0 $(wc -l < /usr/share/dict/words)) /usr/share/dict/words | tail -n 1 | tr "[:upper:]" "[:lower:]"'
+
+# Update ruby-build when installed as an rbenv plugin using git
+alias upgrade-ruby-build="cd ~/.rbenv/plugins/ruby-build && git pull"
+
