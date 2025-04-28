@@ -36,19 +36,18 @@ set laststatus=2               " Always display status line
 
 autocmd BufWritePre * %s/\s\+$//e  " Strip trailing whitespace on save
 
-" Run rspec using \ r
-nnoremap <silent> <leader>r :term bundle exec rspec %<cr>
-
 set background=dark
 
 " Use ag instead of ack
 " From https://github.com/ggreer/the_silver_searcher#vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-" Custom command to run RSpec example on current line
-command -range RSpecRunLine :term rspec %:<line1>
-nnoremap <silent> <leader>rl :RSpecRunLine<cr>
-
 " Custom command to run Rails test on current line
 command -range RailsTestRunLine :term rails test %:<line1>
 nnoremap <silent> <leader>rtl :RailsTestRunLine<cr>
+
+" RSpec.vim mappings from https://github.com/thoughtbot/vim-rspec?tab=readme-ov-file#key-mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
