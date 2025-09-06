@@ -24,3 +24,6 @@ alias random-word='head -n$(jot -r 1 0 $(wc -l < /usr/share/dict/words)) /usr/sh
 # Update ruby-build when installed as an rbenv plugin using git
 alias upgrade-ruby-build="cd ~/.rbenv/plugins/ruby-build && git pull"
 
+# Rename image files to use the modify date from the exif data
+alias rename-image-files-to-exif-date="exiftool -d '%Y%m%d-%H%M%%-03.c.%%e' '-filename<DateTimeOriginal' ."
+
