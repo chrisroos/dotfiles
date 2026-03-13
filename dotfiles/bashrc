@@ -105,6 +105,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Cargo - https://github.com/rust-lang/cargo
+. "$HOME/.cargo/env"
+
 if [ -f ${HOME}/.todo_completion ]; then
   source ${HOME}/.todo_completion
 fi
