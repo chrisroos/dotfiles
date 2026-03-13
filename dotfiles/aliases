@@ -27,3 +27,5 @@ alias upgrade-ruby-build="cd ~/.rbenv/plugins/ruby-build && git pull"
 # Rename image files to use the modify date from the exif data
 alias rename-image-files-to-exif-date="exiftool -d '%Y%m%d-%H%M%%-03.c.%%e' '-filename<DateTimeOriginal' ."
 
+alias t="todo.sh"
+complete -F _todo t
