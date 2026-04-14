@@ -113,3 +113,9 @@ fi
 if [ -f ${HOME}/.todo_completion ]; then
   source ${HOME}/.todo_completion
 fi
+
+# Mise - https://mise.jdx.dev/
+command -v mise > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+  eval "$(mise activate bash)"
+fi
