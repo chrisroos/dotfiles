@@ -1,8 +1,10 @@
 [user]
   name = Chris Roos
   email = chris@seagul.co.uk
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBJ+Gv6LC/6sd42gzFO+mAhmxE5iujdYapElbkWMcfq8
 [commit]
   template = ~/.gitmessage
+  gpgsign = true
 [color]
   diff = auto
   status = auto
@@ -29,3 +31,7 @@
   defaultBranch = main
 [gpg "ssh"]
   program = /opt/1Password/op-ssh-sign
+[gpg]
+  format = ssh
+[tag]
+  gpgsign = true
