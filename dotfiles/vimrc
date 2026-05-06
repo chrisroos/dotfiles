@@ -16,6 +16,7 @@ Plug 'lambdatoast/elm.vim' " Elm syntax highlighting
 Plug 'mileszs/ack.vim'     " Use `ack` from within vim
 Plug 'Konfekt/FastFold'    " Attempt to make Vim more responsive when foldmethod=syntax
 Plug 'https://github.com/thoughtbot/vim-rspec.git'
+Plug 'https://github.com/ludovicchabant/vim-gutentags'
 
 call plug#end()
 filetype plugin indent on    " required
