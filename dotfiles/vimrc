@@ -17,6 +17,7 @@ Plug 'mileszs/ack.vim'     " Use `ack` from within vim
 Plug 'Konfekt/FastFold'    " Attempt to make Vim more responsive when foldmethod=syntax
 Plug 'https://github.com/thoughtbot/vim-rspec.git'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
 filetype plugin indent on    " required
@@ -53,6 +54,3 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-if executable('rg')
-  set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
-endif
