@@ -13,7 +13,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdatoast/elm.vim' " Elm syntax highlighting
-Plug 'mileszs/ack.vim'     " Use `ack` from within vim
 Plug 'Konfekt/FastFold'    " Attempt to make Vim more responsive when foldmethod=syntax
 Plug 'https://github.com/thoughtbot/vim-rspec.git'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
@@ -39,10 +38,6 @@ set laststatus=2               " Always display status line
 autocmd BufWritePre * %s/\s\+$//e  " Strip trailing whitespace on save
 
 set background=dark
-
-" Use ag instead of ack
-" From https://github.com/ggreer/the_silver_searcher#vim
-let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Custom command to run Rails test on current line
 command -range RailsTestRunLine :term rails test %:<line1>
