@@ -119,3 +119,8 @@ command -v mise > /dev/null 2>&1
 if [ $? -eq 0 ]; then
   eval "$(mise activate bash)"
 fi
+
+# Use Bitwarden as SSH Agent
+if [ -S ${HOME}/.bitwarden-ssh-agent.sock ]; then
+  export SSH_AUTH_SOCK=${HOME}/.bitwarden-ssh-agent.sock
+fi

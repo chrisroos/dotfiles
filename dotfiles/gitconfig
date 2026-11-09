@@ -30,7 +30,7 @@
 [init]
   defaultBranch = main
 [gpg "ssh"]
-  program = /opt/1Password/op-ssh-sign
+  allowedSignersFile = /home/chrisroos/.ssh/allowed_signers
 [gpg]
   format = ssh
 [tag]
